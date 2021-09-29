@@ -25,3 +25,21 @@ img {
   display: block;
   width: 100%;
 }
+
+footer {
+  display: grid;
+  grid-template-areas:
+  "img1 img2 img3";
+}
+
+footer ul>li:first-child {
+  grid-area: img1;
+}
+
+footer ul>li:nth-child(2){
+  grid-area: img2;
+}
+
+footer ul>li:nth-child(3) {
+  grid-area: img3;
+}
